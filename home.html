@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html>
+<style>
+.login-screen {
+   text-align: center;
+   height: 100%;
+   background: url("/images/start_screen.png");
+}
+form {
+   padding-top: 7em;
+}
+label {
+   text-align: center;
+   align-content: center;
+   display: block;
+   padding: 10;
+   font-size: 1.75em;
+   font-weight: bold;
+   color: rgba(210,210,210,0.8);
+}
+.button {
+   width: 136px;
+   height: 35px;
+   margin-top: 20px;
+}
+</style>
+    <body>
+    <div class="login-screen">
+        <form action="eecs_647.php" method="post">
+	    	<div>
+			<label for='username'>Username</label>
+			<input id='username' type='text' name='username' />
+		</div>
+		<div>
+			<label for='password'>Password</label>
+			<input id='password' type='password' name='password' />
+		</div>
+            <input type="submit" class="button" id="sign_in" name="sign_in" value="Sign In" />
+            	
+        </form>
+        <a href="/create_user.html">
+	    <button class="button">Create User</button>
+	</a>
+	</div>
+    </body>
+</html>
